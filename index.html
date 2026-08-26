@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; color: #333; line-height: 1.6; }
+        h1 { color: #2b6cb0; }
+        h2 { color: #2c5282; border-bottom: 2px solid #3182ce; padding-bottom: 5px; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 15px; }
+        th, td { border: 1px solid #cbd5e0; padding: 8px 12px; text-align: left; }
+        th { background-color: #2b6cb0; color: white; }
+        code { background-color: #edf2f7; padding: 2px 4px; border-radius: 4px; color: #2b6cb0; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Panduan Perintah Dasar Linux</h1>
+    <p>Ringkasan perintah penting beserta penjelasannya untuk pengelolaan sistem Linux.</p>
+
+    <h2>1. Navigasi dan Manajemen File</h2>
+    <table>
+        <tr><th>Perintah</th><th>Penjelasan</th></tr>
+        <tr><td><code>pwd</code></td><td>Menampilkan direktori (folder) aktif tempat Anda berada saat ini.</td></tr>
+        <tr><td><code>ls</code></td><td>Menampilkan daftar file dan folder di direktori aktif.</td></tr>
+        <tr><td><code>cd</code></td><td>Berpindah antar direktori (contoh: <code>cd /folder/tujuan</code>).</td></tr>
+        <tr><td><code>mkdir</code></td><td>Membuat folder baru (contoh: <code>mkdir nama_folder</code>).</td></tr>
+        <tr><td><code>touch</code></td><td>Membuat file kosong baru (contoh: <code>touch file.txt</code>).</td></tr>
+        <tr><td><code>cp</code></td><td>Menyalin file atau folder (contoh: <code>cp file1.txt file2.txt</code>).</td></tr>
+        <tr><td><code>mv</code></td><td>Memindahkan atau mengganti nama file/folder (contoh: <code>mv lama.txt baru.txt</code>).</td></tr>
+        <tr><td><code>rm</code></td><td>Menghapus file atau folder (gunakan opsi <code>-rf</code> untuk folder).</td></tr>
+    </table>
+
+    <h2>2. Membaca dan Mencari File</h2>
+    <table>
+        <tr><th>Perintah</th><th>Penjelasan</th></tr>
+        <tr><td><code>cat</code></td><td>Menampilkan isi file teks secara keseluruhan di terminal.</td></tr>
+        <tr><td><code>less</code></td><td>Membaca isi file teks halaman demi halaman secara interaktif.</td></tr>
+        <tr><td><code>grep</code></td><td>Mencari kata atau pola tertentu di dalam file.</td></tr>
+    </table>
+
+    <h2>3. Manajemen Sistem dan Proses</h2>
+    <table>
+        <tr><th>Perintah</th><th>Penjelasan</th></tr>
+        <tr><td><code>sudo</code></td><td>Menjalankan perintah dengan hak akses administrator (superuser).</td></tr>
+        <tr><td><code>ps</code></td><td>Menampilkan daftar proses yang sedang berjalan di sistem.</td></tr>
+        <tr><td><code>top / htop</code></td><td>Memantau penggunaan sumber daya sistem (CPU, RAM) secara real-time.</td></tr>
+        <tr><td><code>kill</code></td><td>Menghentikan proses berdasarkan nomor PID-nya (contoh: <code>kill 1234</code>).</td></tr>
+        <tr><td><code>df</code></td><td>Memeriksa kapasitas ruang kosong pada hard disk atau penyimpanan.</td></tr>
+        <tr><td><code>du</code></td><td>Memeriksa ukuran penggunaan file atau folder dalam sistem.</td></tr>
+    </table>
+
+    <h2>4. Jaringan (Network)</h2>
+    <table>
+        <tr><th>Perintah</th><th>Penjelasan</th></tr>
+        <tr><td><code>ping</code></td><td>Menguji koneksi jaringan ke internet atau server lain (contoh: <code>ping google.com</code>).</td></tr>
+        <tr><td><code>curl / wget</code></td><td>Mengunduh file atau melakukan permintaan data dari internet melalui terminal.</td></tr>
+    </table>
+</body>
+</html>
